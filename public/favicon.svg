@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="40" height="40"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="url(#paint0_radial_604_970)" stroke="url(#paint1_linear_604_970)"></rect>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.532 17.7946C20.532 15.8547 18.1767 14.8942 16.8201 16.2808L10.0086 23.2426C8.66782 24.6129 9.63868 26.9211 11.5558 26.9211H17.1056C17.796 26.9211 18.3556 27.4807 18.3556 28.1711C18.3556 28.8615 17.796 29.4211 17.1056 29.4211H11.5558C7.42456 29.4211 5.33241 24.4472 8.22161 21.4942L15.0331 14.5324C17.9566 11.5444 23.032 13.6143 23.032 17.7946V24.7564C23.032 25.9519 24.0011 26.9211 25.1966 26.9211H26.6206C27.8161 26.9211 28.7852 25.9519 28.7852 24.7564V16.4529C28.7852 15.7626 29.3449 15.2029 30.0352 15.2029C30.7256 15.2029 31.2852 15.7626 31.2852 16.4529V24.7564C31.2852 27.3327 29.1968 29.4211 26.6206 29.4211H25.1966C22.6204 29.4211 20.532 27.3327 20.532 24.7564V17.7946Z" fill="white"></path>
+<circle cx="29.9861" cy="11.4392" r="1.79861" fill="white"></circle>
+<defs>
+<radialGradient id="SvgjsRadialGradient1008" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(5.77148 9.375) rotate(52.7149) scale(52.1374 72.0105)">
+<stop stop-color="#F67FBC"></stop>
+<stop offset="0.637239" stop-color="#555FF5"></stop>
+<stop offset="1" stop-color="#9EFFEE"></stop>
+</radialGradient>
+<linearGradient id="SvgjsLinearGradient1007" x1="20" y1="0" x2="20" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.53"></stop>
+<stop offset="1" stop-color="white" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>

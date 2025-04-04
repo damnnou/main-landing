@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #f6f7f8; /* Светлый фон */
+    --primary: #000000; /* Цвет для заголовков */
+    --foreground: #000000; /* Цвет текста по умолчанию */
+
+    --dark-background: #1a1a1a; /* Темный фон */
+    --dark-primary: #000000; /* Цвет для заголовков */
+    --dark-foreground: #f6f7f8; /* Цвет текста по умолчанию */
+}
+
+.dark {
+    --background: #1a1a1a;
+    --primary: #000000;
+    --foreground: #f6f7f8;
+}
+
+body {
+    background: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+    padding: 16px 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--primary);
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    color: var(--foreground); /* Используйте переменную для текста */
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+.nav-shadow {
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-size: 26.48px;
+}
+
+.text-h1 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+.text-h2 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.text-h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-button {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-body {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.text-body-s {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.text-nav-footer {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #60606091;
+    transition: all;
+    transition-duration: 200ms;
+}
+
+.text-nav-footer:hover {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    color: #606060;
+}
+
+@media (max-width: 1024px) {
+    .text-h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .text-h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    .text-body {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+.radial-gradient {
+    background: radial-gradient(78.96% 103.71% at 14.43% 23.44%, #f67fbc 0%, #555ff5 63.72%, #9effee 130%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.roadmap-shield {
+    /* Frame 1948756779 */
+    background: radial-gradient(78.96% 103.71% at 14.43% 23.44%, #f67fbc 0%, #555ff5 63.72%, #9effee 130%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+    .swiper-slide {
+        padding: 0 0;
+        box-sizing: border-box;
+    }
+}
