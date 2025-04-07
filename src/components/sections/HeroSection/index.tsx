@@ -12,17 +12,15 @@ import Link from "next/link";
 export default function HeroSection() {
     useEffect(() => {
         const aiTitle = new SplitType("#ai-title");
-        gsap.from(aiTitle.chars, {
-            duration: 0.5,
+        gsap.from(aiTitle.lines, {
             opacity: 0,
-            filter: "blur(10px)",
-            ease: "power3.inOut",
-            stagger: 0.05,
+            filter: "blur(5px)",
+            transform: "translateY(50px)",
+            duration: 0.5,
+            ease: "power3.out",
+            stagger: 0.1,
             scrollTrigger: {
                 trigger: "#hero-section",
-                start: "top 80%",
-                end: "top",
-                scrub: false,
             },
         });
 
@@ -32,7 +30,7 @@ export default function HeroSection() {
             opacity: 0,
             filter: "blur(5px)",
             transform: "translateY(50px)",
-            delay: 0.5,
+            delay: 0.1,
             duration: 0.5,
             ease: "power3.out",
             stagger: 0.1,
@@ -45,7 +43,7 @@ export default function HeroSection() {
             opacity: 0,
             filter: "blur(5px)",
             transform: "translateY(50px)",
-            delay: 0.5,
+            delay: 0.2,
             duration: 0.5,
             ease: "power3.out",
             stagger: 0.1,
@@ -60,7 +58,7 @@ export default function HeroSection() {
             id="hero-section"
             className="relative flex flex-col items-start w-full h-screen md:min-h-[900px]  max-md:h-screen text-white overflow-hidden"
         >
-            <div className="relative z-10 flex flex-col max-lg:items-center gap-5 max-w-[600px] max-lg:mx-auto mx-8 mt-[88px] max-lg:my-auto">
+            <div className="relative snap-always snap-center z-10 flex flex-col max-lg:items-center gap-5 max-w-[600px] max-lg:mx-auto mt-[88px] max-lg:my-auto">
                 <h1 id="ai-title" className="text-h1 max-lg:text-center">
                     Truly AI-
                     <br />

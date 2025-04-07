@@ -15,7 +15,11 @@ const features = [
     },
     {
         icon: img20.src,
-        title: "Proactive Intelligence",
+        title: (
+            <span>
+                Proactive <br className="max-lg:hidden" /> Intelligence
+            </span>
+        ),
         description: "MAIN predicts market shifts before they happen, leveraging onchain data and offchain sentiment",
     },
     {
@@ -50,7 +54,7 @@ const AIFeatures = () => {
     }, []);
 
     return (
-        <section id="ai-features-section" className="w-full flex flex-col gap-16 max-lg:items-center">
+        <section id="ai-features-section" className="w-full snap-always snap-center flex flex-col gap-16 max-lg:items-center">
             <h1 id="ai-the-core-title" className="text-h1 max-lg:text-[40px] max-lg:text-center">
                 AI at the Core,
                 <br />
@@ -59,7 +63,7 @@ const AIFeatures = () => {
 
             <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-1">
                 {features.map((feature, index) => (
-                    <FeatureCard index={index} key={index} {...feature} />
+                    <FeatureCard index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : index} key={index} {...feature} />
                 ))}
             </div>
 

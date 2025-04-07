@@ -161,22 +161,26 @@ export function Roadmap() {
             </div>
 
             <Swiper
-                modules={[Autoplay]}
-                spaceBetween={10}
-                slidesPerView={1}
+                modules={[Autoplay, Navigation]}
                 centeredSlides={false}
                 onSwiper={(swiper) => {
                     (swiperRef.current as any) = swiper;
                     swiper.on("slideChange", () => setActivePhase(swiper.activeIndex));
                 }}
                 breakpoints={{
+                    0: {
+                        slidesPerView: 1.1,
+                        spaceBetween: 10,
+                        centeredSlides: true,
+                    },
                     1024: {
-                        slidesPerView: 1.2,
-                        spaceBetween: 20,
+                        slidesPerView: 1,
+                        spaceBetween: 10,
                     },
                 }}
+                navigation
                 id="roadmap-swiper"
-                className="max-lg:max-w-[calc(100vw-32px)] w-full overflow-hidden"
+                className="w-full lg:!overflow-visible group"
             >
                 {phases.map((props, index) => (
                     <SwiperSlide key={index} className="px-2 sm:px-0">

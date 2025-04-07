@@ -57,15 +57,15 @@ p {
 }
 
 .text-h1 {
-    font-size: 80px;
+    font-size: 48px;
     font-weight: 500;
-    line-height: 80px;
+    line-height: 55px;
 }
 
 .text-h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 42px;
 }
 
 .text-h3 {
@@ -74,24 +74,24 @@ p {
 }
 
 .text-button {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .text-body {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
 
 .text-body-s {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
 
 .text-nav-footer {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     font-family: "Inter", sans-serif;
     color: #60606091;
@@ -100,7 +100,7 @@ p {
 }
 
 .text-nav-footer:hover {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     font-family: "Inter", sans-serif;
     color: #606060;
@@ -146,4 +146,27 @@ p {
         padding: 0 0;
         box-sizing: border-box;
     }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    @apply flex lg:!h-12 lg:!w-12 !h-10 !w-10 items-center justify-center rounded-full bg-black/20 group-hover:bg-black/40 !text-white/60 duration-200 hover:!bg-black/80 animate-fade-up animate-duration-200;
+}
+
+.swiper-button-next {
+    @apply lg:!-right-7 z-50 !right-0;
+}
+
+.swiper-button-prev {
+    @apply lg:!-left-7 !left-0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    @apply !text-sm;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    @apply hidden;
 }

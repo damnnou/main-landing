@@ -10,6 +10,17 @@ import { LinkButton, LinkButtonWithArrow } from "../ui/LinkButton";
 import MenuLogo from "../common/MenuLogo";
 import MobileNavigationModal from "./MobileNavigationModal";
 
+export const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+        const headerHeight = document.querySelector("nav")?.offsetHeight || 0;
+        const offset = 20;
+        const position = section.getBoundingClientRect().top + window.scrollY - headerHeight - offset;
+
+        window.scrollTo({ top: position, behavior: "smooth" });
+    }
+};
+
 const Header: React.FC = () => {
     const sections = [
         { id: "ai-features-section", name: "Why MAIN?" },
@@ -18,17 +29,6 @@ const Header: React.FC = () => {
     ];
 
     const [activeSection, setActiveSection] = useState<string | null>(null);
-
-    const scrollToSection = (id: string) => {
-        const section = document.getElementById(id);
-        if (section) {
-            const headerHeight = document.querySelector("nav")?.offsetHeight || 0;
-            const offset = 20;
-            const position = section.getBoundingClientRect().top + window.scrollY - headerHeight - offset;
-
-            window.scrollTo({ top: position, behavior: "smooth" });
-        }
-    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -62,11 +62,11 @@ const Header: React.FC = () => {
     }, [activeSection]);
 
     return (
-        <nav className="flex sticky top-4 z-50 justify-between items-center p-2.5 bg-white rounded-full w-full shadow-xl animate-text-fly-in animate-delay-1000 opacity-0 animate-fill-forwards">
-            <div className="flex items-center gap-8">
+        <nav className="flex sticky top-4 z-50 max-w-[1280px] justify-between items-center p-2.5 bg-white rounded-full w-full shadow-xl animate-text-fly-in animate-delay-100 opacity-0 animate-fill-forwards">
+            <div className="flex items-center gap-6">
                 <button onClick={() => scrollToSection("hero-section")} className="flex items-center">
-                    <img className="lg:mx-2.5 mr-2.5" src={logo.src} alt="Logo" width={40} height={40} />
-                    <img src={main.src} alt="Logo" width={80} />
+                    <img className="lg:ml-1 mr-3" src={logo.src} alt="Logo" width={40} height={40} />
+                    <img src={main.src} alt="Logo" width={64} />
                 </button>
                 <div className="w-px h-8 bg-gray-200 max-xl:hidden" />
                 <div className="flex gap-8 max-xl:hidden">
@@ -91,8 +91,8 @@ const Header: React.FC = () => {
                 </div>
             </div>
 
-            <div className="flex items-center gap-6 max-lg:hidden">
-                <div className="flex gap-5">
+            <div className="flex items-center gap-4 max-lg:hidden">
+                <div className="flex gap-4 items-center">
                     <LinkButton href={"https://x.com/main_ai_dex"} alt="Twitter" icon={XLogo.src} />
                     <LinkButton href={"http://discord.gg/main_ai_dex"} alt="Discord" icon={DiscordLogo.src} />
                     <LinkButton href={"https://t.me/MAIN_AI_DEX"} alt="Telegram" icon={TGLogo.src} />

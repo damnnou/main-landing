@@ -89,14 +89,18 @@ export function AutomatedLiquidity() {
                     />
                     <FeatureCard
                         sm
-                        index={1}
+                        index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : 1}
                         icon="https://dashboard.codeparrot.ai/api/image/Z-1h4-GYgKEKiAWD/img-2.png"
-                        title="Portfolio Insights"
+                        title={
+                            <span>
+                                Portfolio <br className="hidden" /> Insights
+                            </span>
+                        }
                         description="Recommends rebalancing, exits and high-performing pools"
                     />
                     <FeatureCard
                         sm
-                        index={2}
+                        index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : 2}
                         icon="https://dashboard.codeparrot.ai/api/image/Z-1h4-GYgKEKiAWD/img-3.png"
                         title="Optimized Positioning"
                         description="Tailors placements based on your risk profile"
@@ -113,7 +117,7 @@ export function AutomatedLiquidity() {
                     />
                     <FeatureCard
                         sm
-                        index={1}
+                        index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : 1}
                         icon="https://dashboard.codeparrot.ai/api/image/Z-1h4-GYgKEKiAWD/img-5.png"
                         title="Pool Design"
                         description="Crafts liquidity curves and fee structures for token launches"

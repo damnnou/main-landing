@@ -49,7 +49,7 @@ const Footer = () => {
         );
     }, []);
     return (
-        <footer id="footer" className="flex flex-col gap-20 items-center max-w-[1280px] w-full py-24 justify-center relative ">
+        <footer id="footer" className="flex flex-col gap-20 items-center max-w-[1154px] w-full py-24 justify-center relative ">
             <div
                 id="part-of-ai-banner"
                 className="w-full p-4 min-h-[600px] rounded-3xl radial-gradient flex flex-col items-center justify-center"
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
 
                 <Link target="_blank" className="mt-8" href={"https://maindex.deform.cc/waitlist"}>
-                    <PrimaryButton>Experience AI-Run DeFi</PrimaryButton>
+                    <PrimaryButton variant={2}>Experience AI-Run DeFi</PrimaryButton>
                 </Link>
             </div>
 

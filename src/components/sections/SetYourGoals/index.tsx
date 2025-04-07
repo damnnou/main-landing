@@ -47,13 +47,13 @@ export function SetYourGoals() {
                     description="AI optimizes liquidity for max returns with zero effort from you"
                 />
                 <FeatureCard
-                    index={1}
+                    index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : 1}
                     icon={img12.src}
                     title="Trade"
                     description="AI runs advanced strategies like DCA and limit orders for better results"
                 />
                 <FeatureCard
-                    index={2}
+                    index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : 2}
                     icon={img13.src}
                     title="Launch"
                     description="AI designs the ideal price curve for the pool and deploys liquidity instantly"

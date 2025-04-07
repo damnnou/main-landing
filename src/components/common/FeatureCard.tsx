@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 interface FeatureCardProps {
-    title: string;
+    title: string | JSX.Element;
     description: string;
     icon: string;
     sm?: boolean;
@@ -57,17 +57,17 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
     }, [index]);
 
     return (
-        <div ref={cardRef} className="feature-card flex flex-col p-5 md:p-[30px] gap-8 pb-10 bg-white rounded-[24px] shadow-lg">
-            <div ref={contentRef} className="feature-card-content">
+        <div ref={cardRef} className="feature-card p-5 md:p-[30px] gap-8 pb-10 bg-white rounded-[24px] shadow-lg">
+            <div ref={contentRef} className="feature-card-content flex flex-col items-center justify-center">
                 <img
-                    style={{ width: sm ? "110px" : "220px", height: sm ? "90px" : "180px" }}
+                    style={{ width: sm ? "90px" : "160px", height: sm ? "90px" : "160px" }}
                     src={icon}
-                    alt={title}
-                    className="object-contain object-left"
+                    alt={title.toString()}
+                    className="object-contain object-center"
                 />
-                <div className="flex flex-col gap-5">
-                    <h2 className="text-h2">{title}</h2>
-                    <p className="text-body">{description}</p>
+                <div className={"flex flex-col gap-4 items-center justify-center " + (sm ? "mt-4" : "mt-8")}>
+                    <h2 className="text-h2 text-center">{title}</h2>
+                    <p className="text-body text-center">{description}</p>
                 </div>
             </div>
         </div>

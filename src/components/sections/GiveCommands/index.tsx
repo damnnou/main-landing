@@ -81,7 +81,7 @@ export function GiveCommands() {
         >
             <h2 className="text-body max-lg:text-center">No complex UI—just type what you need, and AI handles the rest</h2>
             <h1 id="give-commands-title" className="text-h1 mb-6 max-lg:text-center">
-                <span className="text-secondary">Give Commands.</span>
+                <span className="text-secondary">Give Commands. </span>
                 <br className="lg:hidden" />
                 <span> AI Executes.</span>
             </h1>
