@@ -8,8 +8,8 @@ import { Roadmap } from "../sections/Roadmap";
 const Main = () => {
     return (
         <main className="flex flex-col gap-8 max-md:px-0 items-center w-full">
-            <div className="max-w-[1154px] w-full flex flex-col gap-24 items-center mx-auto ">
-                <HeroSection />
+            <HeroSection />
+            <div className="max-w-[1154px] w-full flex flex-col gap-24 items-center mt-24 max-lg:px-4 max-lg:gap-12 mx-auto">
                 <AIFeatures />
                 <AutomatedLiquidity />
                 <GiveCommands />

@@ -31,7 +31,7 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
                     delay: rowDelay,
                     scrollTrigger: {
                         trigger: cardRef.current,
-                        start: "top 80%",
+                        start: "top 90%",
                         end: "top 60%",
                     },
                 }
@@ -48,7 +48,7 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
                     delay: rowDelay + 0.1,
                     scrollTrigger: {
                         trigger: cardRef.current,
-                        start: "top 80%",
+                        start: "top 90%",
                         end: "top 60%",
                     },
                 }

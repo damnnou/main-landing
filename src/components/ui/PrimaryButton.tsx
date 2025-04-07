@@ -5,7 +5,7 @@ export function PrimaryButton({ children, onClick, variant = 1 }: { children: Re
         <button
             id="primary-button"
             onClick={onClick}
-            className="flex group relative items-center w-fit gap-4  bg-black hover:bg-transparent hover:transition-colors hover:delay-100 rounded-full px-5 p-2.5 "
+            className="flex group relative items-center w-fit gap-4  bg-black hover:bg-transparent hover:transition-colors hover:delay-100 rounded-full px-5 max-lg:px-4 p-2.5"
         >
             <span
                 className={
@@ -16,12 +16,15 @@ export function PrimaryButton({ children, onClick, variant = 1 }: { children: Re
             </span>
             <div
                 className={
-                    "transition-all duration-200 ease-in-out right-2.5 group-hover:right-0  absolute rounded-full group-hover:w-full group-hover:h-full w-[38px] h-[38px] " +
+                    "transition-all duration-200 ease-in-out right-2.5 max-lg:right-1.5 group-hover:right-0  absolute rounded-full group-hover:w-full group-hover:h-full w-[38px] h-[38px] " +
                     (variant === 1 ? "radial-gradient" : "bg-white")
                 }
             />
             <ArrowIcon
-                className={"absolute w-[38px] h-[38px] rounded-full right-2.5 " + (variant === 1 ? "" : "group-hover:invert duration-200")}
+                className={
+                    "absolute w-[38px] h-[38px] rounded-full right-2.5 max-lg:right-1.5 " +
+                    (variant === 1 ? "" : "group-hover:invert duration-200")
+                }
             />
         </button>
     );

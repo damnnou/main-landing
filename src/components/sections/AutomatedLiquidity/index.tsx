@@ -110,7 +110,7 @@ export function AutomatedLiquidity() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
                     <FeatureCard
                         sm
-                        index={0}
+                        index={1}
                         icon="https://dashboard.codeparrot.ai/api/image/Z-1h4-GYgKEKiAWD/img-4.png"
                         title="Dynamic Fee Adjustments"
                         description="Modifies trading fees in real time based on volatility"

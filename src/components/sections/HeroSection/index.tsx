@@ -56,9 +56,12 @@ export default function HeroSection() {
     return (
         <section
             id="hero-section"
-            className="relative flex flex-col items-start w-full h-screen md:min-h-[900px]  max-md:h-screen text-white overflow-hidden"
+            className="flex relative flex-col items-start w-full h-screen max-h-screen pt-16 text-white overflow-hidden"
         >
-            <div className="relative snap-always snap-center z-10 flex flex-col max-lg:items-center gap-5 max-w-[600px] max-lg:mx-auto mt-[88px] max-lg:my-auto">
+            <video loop autoPlay muted playsInline className="absolute z-0 top-0 left-0 w-full h-full object-cover">
+                <source src="/static/ai_animat.mp4" type="video/mp4" />
+            </video>
+            <div className="relative snap-always snap-center z-10 flex flex-col max-lg:items-center items-start gap-5 max-w-[1154px] w-full mx-auto mt-[148px] max-lg:my-auto">
                 <h1 id="ai-title" className="text-h1 max-lg:text-center">
                     Truly AI-
                     <br />

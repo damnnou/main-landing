@@ -43,14 +43,14 @@ const Footer = () => {
                     trigger: "footer",
                     start: "top 60%",
                     end: "top 5%",
-                    scrub: true,
+                    scrub: false,
                 },
             }
         );
     }, []);
     return (
-        <footer id="footer" className="flex flex-col gap-20 items-center max-w-[1154px] w-full py-24 justify-center relative ">
-            <div
+        <footer id="footer" className="flex flex-col gap-20 items-center max-w-[1154px] w-full py-24 max-lg:px-4 justify-center relative ">
+            <section
                 id="part-of-ai-banner"
                 className="w-full p-4 min-h-[600px] rounded-3xl radial-gradient flex flex-col items-center justify-center"
             >
@@ -62,9 +62,9 @@ const Footer = () => {
                 <Link target="_blank" className="mt-8" href={"https://maindex.deform.cc/waitlist"}>
                     <PrimaryButton variant={2}>Experience AI-Run DeFi</PrimaryButton>
                 </Link>
-            </div>
+            </section>
 
-            <div className="max-w-[940px] w-full flex flex-col gap-[60px]">
+            <section className="max-w-[940px] w-full flex flex-col gap-[60px]">
                 <div className="flex flex-col items-center gap-8">
                     <Link href={"https://algebra.finance/"}>
                         <img
@@ -87,7 +87,7 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div className="w-full text-center">
                 <p className="text-body-s text-black">© 2025 Algebra All Rights Reserved</p>

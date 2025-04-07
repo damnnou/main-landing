@@ -48,7 +48,7 @@ export function GiveCommands() {
                         trigger: chatRef.current,
                         start: "top 90%",
                         end: "top 30%",
-                        scrub: true,
+                        scrub: false,
                     },
                 }
             );
@@ -67,7 +67,7 @@ export function GiveCommands() {
                         trigger: sendRef.current,
                         start: "top 95%",
                         end: "top 60%",
-                        scrub: true,
+                        scrub: false,
                     },
                 }
             );
