@@ -26,11 +26,11 @@ export default function Home() {
         const sections = document.querySelectorAll("section");
         let index = 0;
 
-        function scrollToSection(i) {
+        function scrollToSection(i: number) {
             sections[i].scrollIntoView({ behavior: "smooth" });
         }
 
-        function handleScroll(e) {
+        function handleScroll(e: any) {
             const currentSection = sections[index];
             const rect = currentSection.getBoundingClientRect();
 
