@@ -56,19 +56,19 @@ p {
 }
 
 .text-h1 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 500;
     line-height: 55px;
 }
 
 .text-h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 32px;
 }
 
 .text-h3 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -78,7 +78,7 @@ p {
 }
 
 .text-body {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     font-family: "Inter", sans-serif;
 }
@@ -121,6 +121,11 @@ p {
         font-size: 18px;
         font-weight: 400;
         font-family: "Inter", sans-serif;
+    }
+
+    .text-button {
+        font-size: 18px;
+        font-weight: 500;
     }
 }
 
@@ -170,6 +175,11 @@ p {
     @apply hidden;
 }
 
-section {
-    @apply lg:pt-8;
+html,
+body {
+    @apply lg:!snap-y lg:!snap-mandatory lg:!h-screen lg:!scroll-smooth;
+}
+
+.section {
+    @apply lg:pt-8 lg:!snap-start lg:snap-always  w-full lg:h-screen lg:min-h-[940px] flex flex-col items-center justify-center;
 }

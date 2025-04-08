@@ -57,7 +57,7 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
         <div ref={cardRef} className="feature-card p-5 md:p-[30px] gap-8 pb-10 bg-white rounded-[24px] shadow-lg">
             <div ref={contentRef} className="feature-card-content flex flex-col items-center justify-center">
                 <img
-                    style={{ width: sm ? "90px" : "160px", height: sm ? "90px" : "160px" }}
+                    style={{ width: sm ? "80px" : "140px", height: sm ? "80px" : "140px" }}
                     src={icon}
                     alt={title.toString()}
                     className="object-contain object-center"

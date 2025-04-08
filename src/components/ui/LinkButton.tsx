@@ -37,11 +37,9 @@ export function LinkButtonSquared({ icon, href, name }: { icon: string; href: st
         <Link target="_blank" href={href}>
             <button className="flex max-lg:flex-col items-center rounded-[10px] max-w-[220px] w-full min-h-[70px] justify-center px-4 py-2 group relative gap-2 lg:gap-4 bg-white hover:bg-transparent hover:transition-colors hover:delay-100">
                 <img
-                    className="z-10 filter group-hover:invert transition-all duration-200 ease-in-out"
+                    className="z-10 filter group-hover:invert transition-all duration-200 ease-in-out lg:w-[36px] lg:h-[36px] w-[24px] h-[24px]"
                     src={icon}
                     alt={name}
-                    width={36}
-                    height={36}
                 />
                 <span className="text-button z-10 filter group-hover:invert transition-all duration-200 ease-in-out">{name}</span>
                 <div className="radial-gradient transition-all duration-200 ease-in-out absolute rounded-[10px] w-0 h-0 group-hover:w-full group-hover:h-full"></div>

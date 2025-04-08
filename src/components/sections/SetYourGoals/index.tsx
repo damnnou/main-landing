@@ -32,7 +32,7 @@ export function SetYourGoals() {
     return (
         <section
             id="set-your-goals-section"
-            className="flex flex-col items-center lg:items-start justify-center w-full min-w-[300px] gap-16"
+            className="flex flex-col items-center lg:items-start justify-center w-full min-w-[300px] gap-8"
         >
             <h1 id="set-your-goals-title" className="text-h1 max-lg:text-center">
                 <span>Set Your Goals,</span>

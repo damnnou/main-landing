@@ -62,7 +62,7 @@ export function AutomatedLiquidity() {
     return (
         <section id="automated-liquidity-section" className="flex flex-col w-full text-white items-center lg:items-start">
             <div className="flex flex-col w-full">
-                <div className="flex flex-col w-full min-w-[320px] py-8 gap-8 items-center lg:items-start">
+                <div className="flex flex-col w-full min-w-[320px] py-4 gap-4 items-center lg:items-start">
                     <div className="flex">
                         <div id="automated-liquidity-shield" className="px-4 py-2 text-white roadmap-shield rounded-xl">
                             coming soon
@@ -78,8 +78,8 @@ export function AutomatedLiquidity() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center lg:items-start items-center gap-8 w-full py-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+            <div className="flex flex-col justify-center lg:items-start items-center gap-4 w-full py-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
                     <FeatureCard
                         sm
                         index={0}
@@ -107,10 +107,10 @@ export function AutomatedLiquidity() {
                     />
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
                     <FeatureCard
                         sm
-                        index={1}
+                        index={0}
                         icon="https://dashboard.codeparrot.ai/api/image/Z-1h4-GYgKEKiAWD/img-4.png"
                         title="Dynamic Fee Adjustments"
                         description="Modifies trading fees in real time based on volatility"
@@ -125,7 +125,7 @@ export function AutomatedLiquidity() {
                 </div>
             </div>
 
-            <div className="flex justify-center w-full mt-8 mb-8">
+            <div className="flex justify-center w-full my-4">
                 <PrimaryButton>Examine Documentation</PrimaryButton>
             </div>
         </section>

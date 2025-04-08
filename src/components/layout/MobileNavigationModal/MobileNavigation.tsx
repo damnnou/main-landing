@@ -68,7 +68,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ onClose }) => {
             {/* Social Links */}
             <div className="flex items-center justify-center w-fit mx-auto gap-8 mt-8">
                 <LinkButton href={"https://x.com/main_ai_dex"} alt="Twitter" icon={XLogo.src} />
-                <LinkButton href={"http://discord.gg/main_ai_dex"} alt="Discord" icon={DiscordLogo.src} />
+                {/* <LinkButton href={"http://discord.gg/main_ai_dex"} alt="Discord" icon={DiscordLogo.src} /> */}
                 <LinkButton href={"https://t.me/MAIN_AI_DEX"} alt="Telegram" icon={TGLogo.src} />
             </div>
         </div>

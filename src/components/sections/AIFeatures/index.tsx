@@ -54,20 +54,20 @@ const AIFeatures = () => {
     }, []);
 
     return (
-        <section id="ai-features-section" className="w-full snap-always snap-center flex flex-col gap-16 max-lg:items-center">
+        <section id="ai-features-section" className="w-full snap-always snap-center flex flex-col gap-8 max-lg:items-center">
             <h1 id="ai-the-core-title" className="text-h1 max-lg:text-[40px] max-lg:text-center">
                 AI at the Core,
                 <br />
                 <span className="text-secondary">Not Just an Add-On</span>
             </h1>
 
-            <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-1">
+            <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-1">
                 {features.map((feature, index) => (
                     <FeatureCard index={typeof window !== "undefined" && window.innerWidth < 768 ? 0 : index} key={index} {...feature} />
                 ))}
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-4">
                 <PrimaryButton>Discover Our Vision</PrimaryButton>
             </div>
         </section>

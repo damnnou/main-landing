@@ -139,11 +139,11 @@ export function Roadmap() {
     }, []);
 
     return (
-        <section id="roadmap-section" className="flex flex-col gap-8 items-center lg:items-start w-full">
+        <section id="roadmap-section" className="flex flex-col gap-4 items-center lg:items-start w-full">
             <h1 id="roadmap-title" className="text-h1 max-lg:text-center">
                 Roadmap
             </h1>
-            <div className="flex gap-4 md:gap-8 overflow-x-auto w-fit max-lg:mx-auto pb-2">
+            <div className="flex gap-4 md:gap-4 overflow-x-auto w-fit max-lg:mx-auto pb-2">
                 {phases.map((_, index) => (
                     <button
                         key={index}

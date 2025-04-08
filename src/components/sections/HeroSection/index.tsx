@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
 import Link from "next/link";
+import heroBg from "@/assets/hero-bg.png";
 
 export default function HeroSection() {
     useEffect(() => {
@@ -53,31 +54,34 @@ export default function HeroSection() {
     }, []);
 
     return (
-        <section
-            id="hero-section"
-            className="flex relative flex-col items-start w-full h-screen max-h-screen pt-16 text-white overflow-hidden"
-        >
-            <video loop autoPlay muted playsInline className="absolute z-0 top-0 left-0 w-full h-full object-cover">
-                <source src="/static/ai_animat.mp4" type="video/mp4" />
-            </video>
-            <div className="relative snap-always snap-center z-10 flex flex-col max-lg:items-center items-start gap-5 max-w-[1154px] w-full mx-auto mt-[148px] max-lg:my-auto">
+        <section id="hero-section" className="flex flex-col items-start w-full h-screen max-h-screen pt-16 text-white overflow-hidden">
+            <img
+                src={heroBg.src}
+                style={{
+                    WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+                    maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+                }}
+                alt="AI-Logo"
+                className="absolute z-0 top-0 max-lg:top-12 left-0 w-full h-full object-contain object-top"
+            />
+            <div className="relative snap-always snap-center z-10 flex flex-col max-lg:items-center items-start gap-5 max-w-[1082px] w-full mx-auto mt-[148px] max-lg:mt-auto max-lg:mb-12">
                 <h1 id="ai-title" className="text-h1 max-lg:text-center">
                     Truly AI-
                     <br />
                     Powered DEX
                 </h1>
-                <p id="ai-description" className="text-body max-w-[380px] max-lg:text-center">
-                    An AI runs the DEX, so you don’t have to. Say hello to autonomous DeFi
+                <p id="ai-description" className="text-body max-w-[420px] max-lg:text-center">
+                    An AI runs the DEX, so you don’t have to. <br /> Say hello to autonomous DeFi
                 </p>
 
                 <Link target="_blank" href={"https://maindex.deform.cc/waitlist"}>
                     <PrimaryButton>Join the Revolution</PrimaryButton>
                 </Link>
 
-                <div className="flex items-center justify-center w-fit gap-8 mt-8 lg:hidden">
-                    <LinkButton href={"https://google.com"} alt="Twitter" icon={XLogo.src} />
-                    <LinkButton href={"https://google.com"} alt="Discord" icon={DiscordLogo.src} />
-                    <LinkButton href={"https://google.com"} alt="Telegram" icon={TGLogo.src} />
+                <div className="flex items-center justify-center w-fit gap-8 mt-8 lg:hidden animate-fade-up animate-duration-300 animate-delay-300">
+                    <LinkButton href={"https://x.com/main_ai_dex"} alt="Twitter" icon={XLogo.src} />
+                    {/* <LinkButton href={"https://google.com"} alt="Discord" icon={DiscordLogo.src} /> */}
+                    <LinkButton href={"https://t.me/MAIN_AI_DEX"} alt="Telegram" icon={TGLogo.src} />
                 </div>
             </div>
         </section>
