@@ -33,7 +33,7 @@ const Header: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
             const headerHeight = document.querySelector("nav")?.offsetHeight || 0;
-            const scrollPosition = window.scrollY + headerHeight + 40; // Учитываем отступ
+            const scrollPosition = window.scrollY + headerHeight + 120; // Учитываем отступ
 
             let newActiveSection = activeSection;
 
@@ -62,11 +62,11 @@ const Header: React.FC = () => {
     }, [activeSection]);
 
     return (
-        <nav className="flex fixed top-4 z-50 max-w-[1144px] max-lg:max-w-[calc(100%-2rem)] justify-between items-center p-2.5 bg-white rounded-full w-full shadow-xl animate-text-fly-in animate-delay-100 opacity-0 animate-fill-forwards">
+        <nav className="flex min-h-[56px] fixed top-4 z-50 max-w-[1144px] max-lg:max-w-[calc(100%-2rem)] justify-between items-center p-2.5 bg-white rounded-full w-full shadow-xl animate-text-fly-in animate-delay-100 opacity-0 animate-fill-forwards">
             <div className="flex items-center gap-6">
                 <button onClick={() => scrollToSection("hero-section")} className="flex items-center">
-                    <img className="lg:ml-1 mr-3" src={logo.src} alt="Logo" width={36} height={36} />
-                    <img src={main.src} alt="Logo" className="" width={72} />
+                    {/* <img className="lg:ml-1 mr-3" src={logo.src} alt="Logo" width={36} height={36} /> */}
+                    <img src={main.src} alt="Logo" className="lg:ml-4 ml-2" width={72} />
                 </button>
                 <div className="w-px h-8 bg-gray-200 max-xl:hidden" />
                 <div className="flex gap-8 max-xl:hidden">

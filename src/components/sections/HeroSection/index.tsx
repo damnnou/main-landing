@@ -39,7 +39,7 @@ export default function HeroSection() {
             },
         });
 
-        gsap.from("#primary-button", {
+        gsap.from("#primary-button-1", {
             opacity: 0,
             filter: "blur(5px)",
             transform: "translateY(50px)",
@@ -74,7 +74,7 @@ export default function HeroSection() {
                     An AI runs the DEX, so you don’t have to. <br /> Say hello to autonomous DeFi
                 </p>
 
-                <Link target="_blank" href={"https://maindex.deform.cc/waitlist"}>
+                <Link id="primary-button-1" target="_blank" href={"https://maindex.deform.cc/waitlist"}>
                     <PrimaryButton>Join the Revolution</PrimaryButton>
                 </Link>
 
