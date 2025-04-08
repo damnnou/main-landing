@@ -170,11 +170,6 @@ p {
     @apply hidden;
 }
 
-html,
-body {
-    @apply lg:!snap-y lg:!snap-mandatory lg:!h-screen lg:!scroll-smooth;
-}
-
 section {
-    @apply lg:pt-16 snap-center snap-always;
+    @apply lg:pt-8;
 }

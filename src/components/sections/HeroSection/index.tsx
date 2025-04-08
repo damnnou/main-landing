@@ -6,7 +6,6 @@ import DiscordLogo from "@/assets/socials/DiscordLogo.svg";
 import { useEffect } from "react";
 import SplitType from "split-type";
 import gsap from "gsap";
-import WaitlistModal from "@/components/layout/WaitListModal";
 import Link from "next/link";
 
 export default function HeroSection() {
