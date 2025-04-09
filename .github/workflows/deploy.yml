@@ -1,4 +1,4 @@
-name: Tonco Landing Deploy
+name: MAIN Landing Deploy
 
 on:
   push:
