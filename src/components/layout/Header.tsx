@@ -1,10 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
-import main from "../../assets/main.png";
+import main from "../../assets/main.svg";
 import XLogo from "@/assets/socials/XLogo.svg";
 import TGLogo from "@/assets/socials/TGLogo.svg";
-import DiscordLogo from "@/assets/socials/DiscordLogo.svg";
 import { PrimaryButton } from "../ui/PrimaryButton";
 import { LinkButton, LinkButtonWithArrow } from "../ui/LinkButton";
 import MenuLogo from "../common/MenuLogo";
@@ -96,7 +94,7 @@ const Header: React.FC = () => {
                     <LinkButton href={"https://x.com/main_ai_dex"} alt="Twitter" icon={XLogo.src} />
                     {/* <LinkButton href={"http://discord.gg/main_ai_dex"} alt="Discord" icon={DiscordLogo.src} /> */}
                     <LinkButton href={"https://t.me/MAIN_AI_DEX"} alt="Telegram" icon={TGLogo.src} />
-                    <LinkButtonWithArrow href={""}>Blog</LinkButtonWithArrow>
+                    <LinkButtonWithArrow href={"https://blog.main.exchange"}>Blog</LinkButtonWithArrow>
                 </div>
                 <Link target="_blank" href={"https://maindex.deform.cc/waitlist"}>
                     <PrimaryButton>App Coming Soon</PrimaryButton>

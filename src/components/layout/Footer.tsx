@@ -17,7 +17,7 @@ const socialLinks = [
     {
         name: "Blog",
         icon: ArrowUpRight.src,
-        link: "#",
+        link: "https://blog.main.exchange",
     },
 ];
 

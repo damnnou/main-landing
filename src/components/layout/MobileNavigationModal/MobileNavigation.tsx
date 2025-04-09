@@ -62,7 +62,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ onClose }) => {
                 <Link target="_blank" href={"https://maindex.deform.cc/waitlist"}>
                     <PrimaryButton>App Coming Soon</PrimaryButton>
                 </Link>
-                <LinkButtonWithArrow href={""}>Blog</LinkButtonWithArrow>
+                <LinkButtonWithArrow href={"https://blog.main.exchange"}>Blog</LinkButtonWithArrow>
             </div>
 
             {/* Social Links */}
