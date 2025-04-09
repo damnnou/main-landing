@@ -60,7 +60,7 @@ const Header: React.FC = () => {
     }, [activeSection]);
 
     return (
-        <nav className="flex min-h-[56px] fixed top-4 z-50 max-w-[1144px] max-lg:max-w-[calc(100%-2rem)] justify-between items-center p-2.5 bg-white rounded-full w-full shadow-xl animate-text-fly-in animate-delay-100 opacity-0 animate-fill-forwards">
+        <nav className="flex min-h-[56px] fixed top-4 z-50 max-w-[1144px] w-[calc(100%-2rem)] justify-between items-center p-2.5 bg-white rounded-full shadow-xl animate-text-fly-in animate-delay-100 opacity-0 animate-fill-forwards">
             <div className="flex items-center gap-6">
                 <button onClick={() => scrollToSection("hero-section")} className="flex items-center">
                     {/* <img className="lg:ml-1 mr-3" src={logo.src} alt="Logo" width={36} height={36} /> */}

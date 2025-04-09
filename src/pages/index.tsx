@@ -29,7 +29,7 @@ export default function Home() {
     // }, []);
 
     return (
-        <div className="flex flex-col items-center max-w-screen mx-auto">
+        <div className="flex flex-col items-center max-w-screen mx-auto lg:px-6">
             <Header />
             <Main />
             <Footer />

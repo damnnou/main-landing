@@ -1,6 +1,7 @@
 import FeatureCard from "@/components/common/FeatureCard";
 import { PrimaryButton } from "@/components/ui/PrimaryButton";
 import gsap from "gsap";
+import Link from "next/link";
 import { useEffect } from "react";
 import SplitType from "split-type";
 
@@ -126,7 +127,9 @@ export function AutomatedLiquidity() {
             </div>
 
             <div className="flex justify-center w-full my-4">
-                <PrimaryButton>Examine Documentation</PrimaryButton>
+                <Link target="_blank" href="https://docs.main.exchange">
+                    <PrimaryButton>Examine Documentation</PrimaryButton>
+                </Link>
             </div>
         </section>
     );

@@ -6,6 +6,7 @@ import img22 from "@/assets/images/image 11022.png";
 import img23 from "@/assets/images/image 11023.png";
 import SplitType from "split-type";
 import gsap from "gsap";
+import Link from "next/link";
 
 const features = [
     {
@@ -68,7 +69,9 @@ const AIFeatures = () => {
             </div>
 
             <div className="flex justify-center mt-4">
-                <PrimaryButton>Discover Our Vision</PrimaryButton>
+                <Link target="_blank" href="https://blog.main.exchange">
+                    <PrimaryButton>Discover Our Vision</PrimaryButton>
+                </Link>
             </div>
         </section>
     );

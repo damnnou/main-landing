@@ -39,7 +39,7 @@ export function SetYourGoals() {
                 <br />
                 <span className="text-secondary"> Let AI Do the Work</span>
             </h1>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
                 <FeatureCard
                     index={0}
                     icon={img11.src}

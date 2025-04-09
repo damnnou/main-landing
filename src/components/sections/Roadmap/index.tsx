@@ -170,12 +170,12 @@ export function Roadmap() {
                 breakpoints={{
                     0: {
                         slidesPerView: 1.1,
-                        spaceBetween: 10,
+                        spaceBetween: 16,
                         centeredSlides: true,
                     },
                     1024: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 16,
                     },
                 }}
                 navigation
