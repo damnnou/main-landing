@@ -8,17 +8,19 @@ import { LinkButton, LinkButtonWithArrow } from "../ui/LinkButton";
 import MenuLogo from "../common/MenuLogo";
 import MobileNavigationModal from "./MobileNavigationModal";
 
-export const scrollToSection = (id: string) => {
+const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
         const headerHeight = document.querySelector("nav")?.offsetHeight || 0;
-        const offset = 20;
-        const position = section.getBoundingClientRect().top + window.scrollY - headerHeight - offset;
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+        const sectionHeight = section.offsetHeight;
+        const viewportHeight = window.innerHeight;
+
+        const position = sectionTop - viewportHeight / 2 + sectionHeight / 2 - headerHeight;
 
         window.scrollTo({ top: position, behavior: "smooth" });
     }
 };
-
 const Header: React.FC = () => {
     const sections = [
         { id: "ai-features-section", name: "Why MAIN?" },
@@ -54,7 +56,6 @@ const Header: React.FC = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-        handleScroll();
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, [activeSection]);

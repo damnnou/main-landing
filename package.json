@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "css-scroll-snap-polyfill": "^0.1.2",
         "dotenv": "^16.4.5",
         "ethers": "^6.13.5",
         "framer-motion": "^12.6.3",

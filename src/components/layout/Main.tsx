@@ -4,6 +4,9 @@ import { GiveCommands } from "../sections/GiveCommands";
 import { AutomatedLiquidity } from "../sections/AutomatedLiquidity";
 import { SetYourGoals } from "../sections/SetYourGoals";
 import { Roadmap } from "../sections/Roadmap";
+import Link from "next/link";
+import { PrimaryButton } from "../ui/PrimaryButton";
+import { FooterBanner } from "../sections/FooterBanner";
 
 const Main = () => {
     return (
@@ -26,6 +29,9 @@ const Main = () => {
                 </div>
                 <div className="section">
                     <Roadmap />
+                </div>
+                <div className="section">
+                    <FooterBanner />
                 </div>
             </div>
         </main>

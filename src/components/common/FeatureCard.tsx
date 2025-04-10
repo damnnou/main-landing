@@ -15,15 +15,15 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
 
     useEffect(() => {
         if (cardRef.current && contentRef.current) {
-            const rowDelay = index * 0.1;
+            const rowDelay = index * 0.13;
 
             gsap.fromTo(
                 cardRef.current,
-                { opacity: 0, y: (index + 1) * 100 },
+                { opacity: 0, y: (index + 0.8) * 100 },
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 0.5,
+                    duration: 1.2,
                     ease: "power3.out",
                     delay: rowDelay,
                     scrollTrigger: {
@@ -40,7 +40,7 @@ const FeatureCard = ({ title, description, icon, sm = false, index }: FeatureCar
                 {
                     opacity: 1,
                     y: 0,
-                    duration: 0.5,
+                    duration: 1,
                     ease: "power3.out",
                     delay: rowDelay + 0.1,
                     scrollTrigger: {

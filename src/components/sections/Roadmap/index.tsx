@@ -1,6 +1,6 @@
 import RoadmapPhase, { RoadmapPhaseProps } from "./RoadmapPhase";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Mousewheel } from "swiper/modules";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -161,7 +161,7 @@ export function Roadmap() {
             </div>
 
             <Swiper
-                modules={[Autoplay, Navigation]}
+                modules={[Mousewheel, Navigation]}
                 centeredSlides={false}
                 onSwiper={(swiper) => {
                     (swiperRef.current as any) = swiper;
@@ -179,6 +179,10 @@ export function Roadmap() {
                     },
                 }}
                 navigation
+                mousewheel={{
+                    forceToAxis: false,
+                    releaseOnEdges: true,
+                }}
                 id="roadmap-swiper"
                 className="w-full lg:!overflow-visible group"
             >
