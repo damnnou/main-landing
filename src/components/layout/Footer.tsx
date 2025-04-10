@@ -23,7 +23,7 @@ const socialLinks = [
 
 const Footer = () => {
     return (
-        <section id="footer-section" className="h-fit mt-20">
+        <section id="footer-section" className="section h-full mt-20">
             <footer id="footer" className="flex flex-col gap-20 items-center max-w-[1082px] w-full max-lg:px-4 justify-center relative">
                 <div className="max-w-[940px] w-full flex flex-col gap-[60px]">
                     <div className="flex flex-col items-center gap-8">

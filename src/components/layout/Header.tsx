@@ -21,6 +21,7 @@ const scrollToSection = (id: string) => {
         window.scrollTo({ top: position, behavior: "smooth" });
     }
 };
+
 const Header: React.FC = () => {
     const sections = [
         { id: "ai-features-section", name: "Why MAIN?" },

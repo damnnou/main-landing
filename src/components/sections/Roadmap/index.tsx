@@ -180,7 +180,7 @@ export function Roadmap() {
                 }}
                 navigation
                 mousewheel={{
-                    forceToAxis: false,
+                    forceToAxis: true,
                     releaseOnEdges: true,
                 }}
                 id="roadmap-swiper"

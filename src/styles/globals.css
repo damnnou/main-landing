@@ -175,6 +175,11 @@ p {
     @apply hidden;
 }
 
+html,
+body {
+    @apply lg:!snap-y lg:!snap-mandatory lg:!h-screen lg:scroll-smooth;
+}
+
 .section {
-    @apply lg:pt-8 w-full h-fit flex flex-col items-center justify-center;
+    @apply lg:pt-8 lg:!snap-always lg:!snap-center w-full h-fit flex flex-col items-center justify-center;
 }
